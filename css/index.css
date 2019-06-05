@@ -1,1 +1,352 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a,
+button {
+  cursor: pointer;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin: 40px 150px;
+}
+.nav-right,
+.nav-left {
+  display: flex;
+}
+.nav-link {
+  text-decoration: none;
+  color: #0B0B09;
+  margin-left: 45px;
+  font-size: 2.4em;
+  align-self: center;
+}
+.quote-btn {
+  align-self: center;
+  display: block;
+  background: none;
+  padding: 10px 20px;
+  font-size: 2.4em;
+  border: 2px solid #0B0B09;
+}
+#section1 {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("/img/apple-devices-computer-contemporary-234527.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  position: relative;
+}
+.intro-text {
+  width: max-content;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+.intro-text h1 {
+  color: #CFCFCF;
+  text-align: center;
+  font-size: 5.4em;
+  max-width: 75vw;
+  font-weight: 100;
+}
+.intro-text span {
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #77FFDA;
+}
+.get-started {
+  margin: 35vh auto 0 auto;
+  width: max-content;
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+}
+.get-started img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+  padding-bottom: 4px;
+  width: 40px;
+}
+#section2 {
+  margin: 100px 150px;
+}
+#section2 h1 {
+  font-size: 4em;
+  color: #0B0B09;
+  width: max-content;
+  margin: 10px auto 10px auto;
+}
+#section2 p {
+  font-size: 2em;
+  padding: 25px 0 100px 0;
+  width: max-content;
+  margin: 0 auto;
+  color: #CFCFCF;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 7.5em;
+}
+.icon-box {
+  justify-self: center;
+}
+.icon-box img {
+  text-align: center;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+}
+#section3 {
+  margin: 100px 150px;
+}
+#section3 h1 {
+  font-size: 4em;
+  color: #0B0B09;
+  width: max-content;
+  margin: 10px auto 10px auto;
+}
+#section3 p {
+  font-size: 2em;
+  padding: 25px 0 100px 0;
+  width: max-content;
+  margin: 0 auto;
+  color: #CFCFCF;
+}
+.grid-wrapper-2 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.company-box {
+  justify-self: center;
+  width: 300px;
+}
+.company-box p {
+  max-width: 300px;
+  text-align: center;
+}
+#section4 {
+  margin: 100px 150px;
+}
+#section4 h1 {
+  font-size: 4em;
+  color: #0B0B09;
+  width: max-content;
+  margin: 10px auto 10px auto;
+}
+#section4 p {
+  font-size: 2em;
+  padding: 25px 0 100px 0;
+  width: max-content;
+  margin: 0 auto;
+  color: #CFCFCF;
+}
+.contact-body-wrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: max-content max-content;
+  margin: 25px 0;
+  grid-column-gap: 50px;
+}
+.contact-b-left {
+  grid-row: 2;
+}
+.contact-b-right {
+  grid-row: 2;
+  justify-self: center;
+}
+.contact-b-right h6 {
+  font-size: 1.5em;
+  margin-top: 0.75em;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1.5em;
+  color: #5d656b;
+}
+.contact-b-right span {
+  margin-top: 1em;
+  font-weight: 800;
+  font-style: normal;
+}
+iframe {
+  max-width: 100%;
+  width: 500px;
+  height: 70%;
+  box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.05);
+}
+form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, max-content);
+  padding: 0;
+  grid-row-gap: 10px;
+}
+textarea,
+input[type=text],
+input[type=tel],
+input[type=email] {
+  border: none;
+  background: #f4f5f7;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #f0eeee;
+  border-radius: 3px;
+}
+textarea {
+  height: 100px;
+}
+#submitBtn {
+  width: max-content;
+  margin: 10px auto;
+  padding: 8px 24px;
+  background: #77FFDA;
+  color: white;
+  border: none;
+  font-size: 2.5em;
+  border-radius: 3px;
+}
+#submitBtn:hover {
+  background: #0077c2;
+}

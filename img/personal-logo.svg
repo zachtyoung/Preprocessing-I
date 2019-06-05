@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Group_5" data-name="Group 5" transform="translate(-150 -50)">
+    <path id="Path_1" data-name="Path 1" d="M0,0H75V75H0Z" transform="translate(150 50)" fill="#0b0b09"/>
+    <g id="Group_3" data-name="Group 3" transform="translate(-51 -2)">
+      <text id="Z" transform="translate(210 105)" fill="#fff" font-size="44" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">Z</tspan></text>
+      <text id="Y" transform="translate(268 73.5) rotate(180)" fill="#fff" font-size="44" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">Y</tspan></text>
+    </g>
+  </g>
+</svg>
