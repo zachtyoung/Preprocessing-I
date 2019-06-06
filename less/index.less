@@ -55,13 +55,18 @@ table {
 @primary-color: #0B0B09;
 @secondary-color: #77FFDA;
 @tertiary-color: #CFCFCF;
+@quaternary-color: #5d656b;
+.section-margin{
+	margin: 100px 150px
+}
 
 html{
 	font-size: 62.5%;
 }
 html, body {
 	height: 100%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
 }
 a, button{
 	cursor: pointer;
@@ -74,8 +79,7 @@ a, button{
 .nav-right, .nav-left{
 	display: flex;
 }
-.logo{
-}
+
 .nav-link{
 	text-decoration: none;
 	color: @primary-color;
@@ -137,7 +141,7 @@ a, button{
 	}
 }
 #section2{
-	margin: 100px 150px;
+	.section-margin();
 	h1{
 		font-size: 4em;
 		color: @primary-color;
@@ -155,20 +159,20 @@ a, button{
 .grid-wrapper{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-
 	grid-row-gap: 7.5em;
 }
 .icon-box{
 	justify-self: center;
-
-
 	img{
 		text-align: center;
-		box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.15);
+		box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+		display: block;
+		height: 150px;
+		width: 150px;
 	}
 }
 #section3{
-	margin: 100px 150px;
+	.section-margin();
 	h1{
 		font-size: 4em;
 		color: @primary-color;
@@ -180,23 +184,29 @@ a, button{
 		padding: 25px 0 100px 0;
 		width: max-content;
 		margin: 0 auto;
-		color: @tertiary-color;
+		color: @quaternary-color;
+	}
+	.company-box{
+		justify-self: center;
+		padding: 2em;
+		box-shadow: -6px 23px 24px -18px rgba(0,0,0,0.17);
+		p{
+			max-width: none;
+			width: 100%;
+			text-align: center;
+			line-height: 1.25em;
+			font-weight: 100;
+			
+		}
 	}
 }
 .grid-wrapper-2{
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 }
-.company-box{
-	justify-self: center;
-	width: 300px;
-	p{
-		max-width: 300px;
-		text-align: center;
-	}
-}
+
 #section4{
-	margin: 100px 150px;
+	.section-margin();
 	h1{
 		font-size: 4em;
 		color: @primary-color;
@@ -230,7 +240,7 @@ a, button{
 		font-weight: 100;
 		font-style: italic;
 		line-height: 1.5em;
-		color: #5d656b
+		color: @quaternary-color;
 	}
 	span{
 		margin-top: 1em;
@@ -259,7 +269,8 @@ textarea, input[type=text], input[type=tel], input[type=email]{
     resize: none;
     padding: 10px;
     border: 1px solid rgb(240, 238, 238);
-    border-radius: 3px;
+	border-radius: 3px;
+	font-size: 1.5em;
 }
 textarea{
     height: 100px;
