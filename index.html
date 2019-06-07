@@ -7,13 +7,85 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="navigation">
+    <div class="nav-right">
+      <img class="logo" src="img/personal-logo.svg" alt="">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Portfolio</a>
+      <a class="nav-link" href="#">Work</a>
+      <a class="nav-link" href="#">Contact</a>
+    </div>
+    <div class="nav-left">
+      <button class="quote-btn">Request Quote</button>
+    </div>
+  </div>
+  <section id="section1">
+    <div class="intro-text">
+    <h1>Getting your website off the ground doesn’t need to be 
+      complicated and <span>I’m here to help</span>.</h1>
+      <button class="get-started">Get Started<img src="img/baseline-chevron_right-24px.svg" alt=""></button>
+    </div>
+  </section>
+  <section id="section2">
+    <h1>Skills</h1>
+    <p>The follow are examples of some the skills that I offer</p>
+    <div class="grid-wrapper">
+      <div class="icon-box"><img src="/img/Subtraction 1.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 2.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 3.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 4.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 5.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 6.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 7.svg" alt=""></div>
+      <div class="icon-box"><img src="/img/Subtraction 8.svg" alt=""></div>
+  </div>
+  </section>
+  <section id="section3">
+      <h1>Work History</h1>
+      <p>I've had the opportunity to work for the following companies</p>
+      <div class="grid-wrapper-2">
+        <div class="company-box">
+          <h1>Apple</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla expedita quas facere fugiat facilis voluptate consequatur modi commodi. Odit culpa voluptatum pariatur alias quibusdam totam ab vero, soluta ipsam sit cum adipisci magnam animi quia laborum facilis debitis doloremque dolore. Placeat quia laborum et quas nisi inventore omnis perferendis nam.</p>
+        </div>
+        <div class="company-box">
+          <h1>Microsoft</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugit quae nesciunt inventore, totam nisi a iure facilis molestiae, nam corrupti sunt quasi minus debitis!</p>
+        </div>
+        <div class="company-box">
+          <h1>Google</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi ea corrupti odio vel sapiente nulla iste fugit? Sit quae tenetur consequuntur quisquam alias quibusdam fugit consectetur saepe, quidem possimus nam quam aspernatur laborum! Et repellat voluptates molestiae deleniti sed!</p>
+        </div>
+      </div>
+    </section>
+    <section id="section4">
+        <h1>Contact</h1>
+        <p>Looking get in touch? Drop me a line below.</p>
+        <div class="contact-body-wrap">
+            <div class="contact-b-left">
+                    <form action="">
+                            <input type="text" name="firstName" placeholder="First Name">
+                            <input type="text" name="lastName" placeholder="Last Name">
+                            <input type="email" name="email" placeholder="Email Address">
+                            <input type="tel" name="phone" placeholder="Phone Number">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button id="submitBtn">Sumbit</button>
+                        </form>
+            </div>
+            <div class="contact-b-right">
+                    <iframe width="auto" height="auto" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLRh_0mrbuocRPj3TdL_VlpM&key=AIzaSyBfQkIbU_sg92gP9NyOdFndoMR1kPPJGYc" allowfullscreen></iframe>
+                    <h6><span>Address: </span>1234 North South Street<br>Wichita, KS 67220</h6>
+                    <h6><span>Phone: </span> 316-722-6126</h6>
+                    <h6><span>Email: </span> yourname@lambdaschool.com</h6>
+                </div>
+              </div>
+      </section>
 </body>
 </html>
